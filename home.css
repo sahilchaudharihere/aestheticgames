@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #00FFD1;
+    font-family: 'Orbitron', sans-serif;
+    padding: 20px;
+  }
+  
+  /* Hide any buttons */
+  button {
+    opacity: 0;
+  }
+  
+  /* Heading Styles */
+  h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    color: white;
+    text-shadow: 0 0 10px #00FFD1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-shadow: 0 0 8px #FF85FF;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  /* Image Cards using img tags */
+  .imagef img,
+  .images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+  
+  .imagef img:hover,
+  .images img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  /* Responsive: For mobile */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .imagef img,
+    .images img {
+      max-width: 90%;
+    }
+  }
