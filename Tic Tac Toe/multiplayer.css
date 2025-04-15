@@ -1,0 +1,168 @@
+*{
+padding: 0px;
+margin:0px;
+}
+
+  
+
+
+
+.navbar{
+height: 50px;
+background-color: #F8F3D9;
+  display: flex;
+line-height: 50px;
+
+}
+ body{background-color: #B9B28A;}
+#heading{
+align-self: center;
+margin-left: 400px;
+
+
+
+}
+  
+.container{
+height: 300px;
+ width:300px;
+ display:flex;
+flex-wrap: wrap;
+justify-content:space-around;
+background-color:  #EBE5C2;
+margin: 100px 300px 0 500px;
+padding-top: 12px;
+ border-radius: 15px;
+}
+.buttons{
+height: 80px;
+width:80px;
+ background-color: #F8F3D9;
+color:#504B38 ;
+border-radius: 25px;
+border-color: #B9B28A;
+}
+.sec-container{
+    margin: 0px 300px 0 500px;
+width: 300px;
+height: 36px;
+  
+display: flex;
+align-items: center;
+margin-top: 12px;
+background-color:  #EBE5C2;
+ border-radius: 20px;
+}
+.reset {
+ background-color:#F2EFE7 ;
+width: 100px;
+margin :auto;
+color: #99BC85;
+border-color: #B9B28A;
+}
+
+ .newgame {
+  background-color:#F2EFE7 ;
+ width: 100px;
+ margin :auto;
+ color: #99BC85;
+ border-color: #B9B28A;
+ }
+ 
+
+.computer{
+text-decoration: none;
+color:black;
+border:2px solid black;
+padding: 5px;
+margin-left: 20px;
+  background-color: #B9B28A;}
+   
+ 
+/* 📱 Responsive for screens below 600px */
+/* 📱 Responsive for screens below 600px */
+@media screen and (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  #heading {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .container {
+    width: 90vw;
+    height: auto;
+    margin: 40px auto 0 auto;
+    padding: 10px;
+    justify-content: center; /* add this */
+  }
+
+  .buttons {
+    width: 30%;
+    height: 70px;
+    margin: 1%; /* spacing between buttons */
+  }
+
+  .sec-container {
+    width: 90vw;
+    margin: 12px auto;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .reset,
+  .newgame {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .computer {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
