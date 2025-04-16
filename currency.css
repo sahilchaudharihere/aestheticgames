@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E8F0FE;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  background-color: #DCE5EF;
+  height: 100px;
+  line-height: 100px;
+  gap: 100px;
+  padding-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+   
+}
+
+.submain {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  align-items: center;
+  line-height: 150px;
+  gap: 150px;
+  background-color: #DCE5EF;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.selectbtn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  outline: none;
+  flex-wrap: wrap;
+  margin-bottom: 20px /* Added for responsiveness */
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #263238;
+  font-family: poppins, sans-serif;
+}
+
+.amountprinter {
+  display: flex;
+  width: auto;
+  align-items: center;
+  height: fit-content;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+select {
+  height: 70px;
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+}
+
+input {
+  height: 70px;
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+button {
+  height: 70px;
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  background-color: #1E88E5;
+  color: #FFFFFF;
+}
+
+button:hover {
+  background-color: #1565C0;
+}
+
+pre {
+  font-family: Quicksand, sans-serif;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#textp {
+  border: 1px solid black;
+  font-family: Quicksand, sans-serif;
+  padding: 20px 20px 5px 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  max-width: 300px;
+  box-sizing: border-box;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+#textp::-webkit-scrollbar {
+  height: 8px;
+}
+
+#textp::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 15px;
+  margin: 0 10px;
+}
+
+#textp::-webkit-scrollbar-thumb {
+  background-color: #1E88E5;
+  border-radius: 15px;
+  border: 2px solid transparent;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border: 2px solid #1E88E5;
+  box-shadow: none;
+}
+
+/* ======= RESPONSIVE STYLES BELOW ======= */
+
+@media (max-width: 1024px) {
+  .main,
+  .submain {
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      height: auto;
+      line-height: normal;
+  }
+
+  .amountprinter {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .selectbtn {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+
+  select,
+  input,
+  button {
+      width: 100%;
+      max-width: 300px;
+  }
+
+  #textp {
+      max-width: 90%;
+      word-break: break-word;
+  }
+}
+
+@media (max-width: 600px) {
+  .main,
+  .submain {
+      gap: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .selectbtn {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  select,
+  input,
+  button {
+      width: 90%;
+  }
+}
