@@ -47,7 +47,8 @@ background-color:#FFB4A2 ;
 .converterimg{
     margin-top: 20px;
 }
-
+.calculatorimg{
+  margin-top: 20px;
 @media (max-width: 1024px) {
     .games, .tools {
       flex-wrap: wrap;
